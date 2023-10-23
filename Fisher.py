@@ -112,5 +112,6 @@ Vw = w.T.dot(Sw.dot(w))
 Vb = w.T.dot(Sb.dot(w))
 print("Vw: {}, Vb: {}, eval: {}".format(Vw, Vb, Vb/Vw))
 
+#評価関数の微分値を確認(式の正しさに問題あり)
 delta_eval = (2*Sb.dot(w)*Vw - 2*Sw.dot(w)*Vb)/(Vw**2)
 print("delta_eval: {}".format(delta_eval))
